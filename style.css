@@ -1,0 +1,89 @@
+body {
+    overflow-y: hidden;
+    background-color: black;
+}
+
+h1 {
+    font-size: 10vw;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    mix-blend-mode: difference;
+    z-index: 6;
+}
+
+.master {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.square {
+    position: absolute;
+    border-radius: 25%;
+    animation: spin 8s ease-in-out infinite
+}
+
+.one {
+    background-image: linear-gradient(rgb(36, 134, 167),rgb(3, 200, 255));
+    height: 150px;
+    width: 150px;
+    z-index: 5;
+}
+.two {
+    background-image: linear-gradient(rgb(0, 136, 255), rgb(22, 91, 195));
+    height: 200px;
+    width: 200px;
+    z-index: 4;
+    transform: rotate(10deg) translate(10px, 10px);
+}
+.three {
+    background-image: linear-gradient(rgb(17, 0, 255), rgb(0, 106, 255));
+    height: 250px;
+    width: 250px;
+    z-index: 3;
+    transform: rotate(30deg) translate(30px, 30px);
+}
+.four {
+    background-image: linear-gradient(rgb(64, 0, 255), rgb(140, 0, 255));
+    height: 300px;
+    width: 300px;
+    z-index: 2;
+    transform: rotate(50deg) translate(60px, 60px);
+}
+.five {
+    background-image: linear-gradient(rgb(140, 65, 205), rgb(234, 0, 255));
+    height: 350px;
+    width: 350px;
+    z-index: 1;
+    transform: rotate(70deg) translate(100px, 100px);
+}
+.six {
+    background-image: linear-gradient(rgb(132, 0, 255), rgb(225, 0, 255));
+    height: 400px;
+    width: 400px;
+    z-index: 0;
+    transform: rotate(95deg) translate(150px, 150px);
+}
+.seven {
+    background-image: linear-gradient(rgb(196, 2, 203), rgb(248, 61, 164));
+    height: 450px;
+    width: 450px;
+    z-index: -1;
+    transform: rotate(120deg) translate(200px, 200px);
+}
+
+
+
+@keyframes spin {
+    0% {
+        border-radius: 5%;
+    }
+    50% {
+        border-radius: 100%;
+        transform: rotate(3turn);
+    }
+    100% {
+        border-radius: 5%;
+    }
+  }
